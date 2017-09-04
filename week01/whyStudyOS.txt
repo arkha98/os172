@@ -1,1 +1,3 @@
 #ostutorial
+
+Kenapa harus mempelajari os? Untuk mempelajari apa itu os, bagaimana cara kerja os, apa itu kernel, dll.
