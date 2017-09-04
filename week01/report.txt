@@ -1,0 +1,1 @@
+Untuk 'task week01' saya mempelajari bagaimana cara menggunakan git, perintah apa saja yang ada di bash, menggunakan editor bawaan bash
