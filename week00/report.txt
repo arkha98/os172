@@ -1,0 +1,1 @@
+Task week00 : Tutorial untuk membuat git dan login ke server badak.cs.ui.ac.id
