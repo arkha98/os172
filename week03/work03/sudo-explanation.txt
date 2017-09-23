@@ -1,0 +1,41 @@
+# /etc/init.d scripts are the old way of doing things. They come from the System V standard. However, those scripts are fired only in a particular sequence, so no real dependencies can be established.
+# Therefore, upstart has been developed with the intent to substitute all the /etc/init.d scripts with upstart scripts (in /etc/init).
+# https://askubuntu.com/questions/2075/whats-the-difference-between-service-and-etc-init-d
+
+
+#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          sudo
+# Required-Start:    $local_fs $remote_fs
+# Required-Stop:
+# X-Start-Before:    rmnologin
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Short-Description: Provide limited super user privileges to specific users
+# Description: Provide limited super user privileges to specific users.
+### END INIT INFO
+
+. /lib/lsb/init-functions
+
+N=/etc/init.d/sudo
+
+set -e
+
+case "$1" in
+  start)
+	# make sure privileges don't persist across reboots
+	if [ -d /var/lib/sudo ]
+	then
+                find /var/lib/sudo -exec touch -d @0 '{}' \;
+	fi
+	;;
+  stop|reload|restart|force-reload|status)
+	;;
+  *)
+	echo "Usage: $N {start|stop|restart|force-reload|status}" >&2
+	exit 1
+	;;
+esac
+
+exit 0
