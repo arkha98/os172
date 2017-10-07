@@ -1,6 +1,0 @@
-/home/fasilkom/mahasiswa/a/arkha.sayoga/.gnupg/pubring.gpg
-----------------------------------------------------------
-pub   4096R/60B2824B 2017-09-16 [expires: 2018-03-15]
-uid                  Arkha Sayoga Mayadi (studying OS is fun!) <arkha.sayoga@ui.ac.id>
-sub   4096R/6F096C33 2017-09-16 [expires: 2018-03-15]
-

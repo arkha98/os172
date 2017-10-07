@@ -1,0 +1,4 @@
+w01-170912-16-LR-Learn about Scripting
+w01-170914-16-LR-Learn about C Languange
+w01-170914-17-LR-Learn about Security
+w01-170916-14-PS-Do a Lab02, Learn GCC

@@ -1,9 +1,0 @@
-1.
-	a. kode global-char.c membuat suatu variable global yang memiliki adress dengan panjang 24 bit sedangkan kode local-char.c membuat variable local dengan panjang address 48 bit.
-	b. Karena pada saat implementasi ada ruang stack yang disediakan untuk mengembalikan dari fungsi dan local variable saat fungsi tersebut dikalankan, ketika selesai maka variable tersebut akan dilakukan perintah 'pop()' pada stack dimana akan berisikan nilai kembalian dari hasil perhitungan fungsi tersebut.
-	c. Global variable akan tetap disimpan dalam suatu memory untuk bisa diakses oleh seluruh pemanggilan fungsi, sedangkan local variable hanya akan disimpan sementara oleh stack yang nantinya akan dihapus setelah selesai fungsinya beroperasi. https://stackoverflow.com/questions/14767965/why-is-the-address-of-a-local-variable-identical-for-different-executions
-
-2.
-	a. Untuk mendefinisikan bagaimana file akan dibuka
-	b. Untuk meberikan mode pada file yang dibuka
-	c. Ketika kita membuka file akan didefinisikan oleh file descriptors sebagai angka dimana angka ini akan menjadi pointer pada file table. Dalam file table disimpan informasi tentang file yang dibuka dari file status flag, dan offset. Dalam file table tidak terdapat filenya tetapi file table sendiri memiliki pointer dimana file disimpan dalam vnode table. Dalam vnode table sendiri terdapat alamat dimana file disimpan dalam memory.
